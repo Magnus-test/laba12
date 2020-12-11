@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num: 35
+  count: 6
+  nums: "1 2 3 11 22 26"
+  squared: "1 4 9 121 484 676"
+
+two:
+  num: 24
+  count: 5
+  nums: "1 2 3 11 22"
+  squared: "1 4 9 121 484"

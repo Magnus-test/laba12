@@ -1,0 +1,14 @@
+<h1>Palindrome#input</h1>
+<p>Enter value (>0)</p>
+<%= form_tag("/palindrome/view", :method => "get") do %>
+    <%= label_tag("Value:") %>
+    <%= text_field_tag(:val, nil, placeholder: 120)%>
+    <br/> <br/>
+    <%= submit_tag("Find") %>
+<% end %>
+
+
+<%= form_tag("/palindrome/showDB", :method => "get") do %>
+    <br/>
+    <%= submit_tag("Show Palindrome Database") %>
+<% end %>
