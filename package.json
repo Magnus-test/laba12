@@ -1,5 +1,5 @@
 {
-  "name": "laba11_app",
+  "name": "laba12_app",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
