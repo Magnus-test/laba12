@@ -4,11 +4,14 @@
     <%= label_tag("Value:") %>
     <%= text_field_tag(:val, nil, placeholder: 120)%>
     <br/> <br/>
-    <%= submit_tag("Find") %>
+    <%= submit_tag("Найти") %>
 <% end %>
 
 
 <%= form_tag("/palindrome/showDB", :method => "get") do %>
     <br/>
-    <%= submit_tag("Show Palindrome Database") %>
+    <%= submit_tag("Показать базу данных") %>
 <% end %>
+
+<br/>
+<%= link_to 'Выйти', session_logout_path %>

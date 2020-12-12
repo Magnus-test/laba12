@@ -12,38 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :username %>
+    <%= form.label "Имя пользователя" %>
     <%= form.text_field :username %>
   </div>
 
   <div class="field">
-    <%= form.label :password_digest %>
-    <%= form.text_field :password_digest %>
+    <%= form.label "Пароль" %>
+    <%= form.password_field :password, required: true %>
   </div>
 
   <div class="field">
-    <%= form.label :g %>
-    <%= form.text_field :g %>
-  </div>
-
-  <div class="field">
-    <%= form.label :scaffold %>
-    <%= form.text_field :scaffold %>
-  </div>
-
-  <div class="field">
-    <%= form.label :user %>
-    <%= form.text_field :user %>
-  </div>
-
-  <div class="field">
-    <%= form.label :username %>
-    <%= form.text_field :username %>
-  </div>
-
-  <div class="field">
-    <%= form.label :password_digest %>
-    <%= form.text_field :password_digest %>
+    <%= form.label "Подтверждение пароля" %>
+    <%= form.password_field :password_confirmation, required: true %>
   </div>
 
   <div class="actions">

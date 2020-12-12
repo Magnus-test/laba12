@@ -1,2 +1,7 @@
-<h1>Session#login</h1>
-<p>Find me in app/views/session/login.html.erb</p>
+<%= form_with url: session_create_url, method: :post, local: true do |f| %>
+    <%= f.text_field :login, required: true, label: 'Логин' %>
+    <%= f.password_field :password, required: true, label: 'Пароль' %>
+    <%= f.submit 'Войти' %>
+<% end %>
+
+<%= link_to 'Зарегистрироваться', new_user_path %>
