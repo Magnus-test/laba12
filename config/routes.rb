@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'session/login'
+  get 'session/create'
+  get 'session/logout'
   resources :users
   get 'palindrome/input'
   get 'palindrome/view'
