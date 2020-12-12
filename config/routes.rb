@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   get 'palindrome/input'
   get 'palindrome/view'
   get 'palindrome/showDB'
