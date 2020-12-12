@@ -6,14 +6,16 @@ class SessionControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get create" do
-    get session_create_url
-    assert_response :success
-  end
+  # test 'should have input' do
+  #   user = User.create(username: 'username', password: 'password', password_confirmation: 'password')
+  #   post session_create_url, params: { login: user.username, password: 'password' }
+  #   assert_redirected_to controller: :palindrome, action: :input
+  # end
 
-  test "should get logout" do
+  test 'should logout after signing in' do
+    user = User.create(username: 'username', password: 'password', password_confirmation: 'password')
     get session_logout_url
-    assert_response :success
+    assert_redirected_to controller: :session, action: :login
   end
 
 end

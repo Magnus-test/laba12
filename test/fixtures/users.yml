@@ -2,18 +2,8 @@
 
 one:
   username: MyString
-  password_digest: 
-  g: MyString
-  scaffold: MyString
-  user: MyString
-  username: MyString
   password_digest: MyString
 
 two:
-  username: MyString
-  password_digest: 
-  g: MyString
-  scaffold: MyString
-  user: MyString
   username: MyString
   password_digest: MyString

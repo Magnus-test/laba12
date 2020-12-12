@@ -1,14 +1,14 @@
 require 'test_helper'
 
 class PalindromeControllerTest < ActionDispatch::IntegrationTest
-  test "should get input" do
-    get palindrome_input_url
-    assert_response :success
+  test "should redirect without signing in" do
+    get palindrome_view_url, params: {num: 120}
+    assert_response :redirect
   end
 
-  test "should get view" do
-    get palindrome_view_url
-    assert_response :success
+  test "should redirect to login without signing in" do
+    get root_url
+    assert_redirected_to controller: :session, action: :login
   end
 
   test "should get diffrent results for different input" do 
